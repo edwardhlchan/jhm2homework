@@ -13,7 +13,3 @@ if a == 'no':
     print("Good! Let’s play games instead.")
 elif a == 'yes':
     part2()
-
-
-    # elif b == "candycookiechocolate":
-    #     print("DANGO")
