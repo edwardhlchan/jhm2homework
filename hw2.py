@@ -6,7 +6,7 @@ def part2():
         'cookies': "Can you share with your friends?",
         'candies': "Don’t eat too much."
     }
-    print(dt.get(b, "Invalid choice"))
+    print(dt.get(b, ""))
 
 a = input("Do you want some snacks? (yes/no)")
 if a == 'no':
