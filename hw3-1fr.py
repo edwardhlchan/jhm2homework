@@ -4,8 +4,8 @@ print("-" * 55)
 expect_longest = len(str(n + n)) + 1
 stra = f""
 for i in range(n*n):
-    stra += f"{i//n + 1} + {i%n + 1} = {(i//n+1) + (i%n+1)}" + " "*(((n+n)//10+1)-(i//n+1+i%n+1)//10)
-    #(expect_longest - len(str((i//n+1) + (i%n+1)))) # Versatile version
+    stra += f"{i//n + 1} + {i%n + 1} = {(i//n+1) + (i%n+1)}" + (expect_longest - len(str((i//n+1) + (i%n+1)))) # Versatile version 
+    #stra += f"{i//n + 1} + {i%n + 1} = {(i//n+1) + (i%n+1)}" + " "*(((n+n)//10+1)-(i//n)) # broken bruh 
     if i % n == n - 1:
         print(stra)
         stra = ""
